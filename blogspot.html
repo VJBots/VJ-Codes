@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting To Your Link</title>
+    <script type="text/javascript">
+      
+      // Code Credit Goes To Yt - Tech VJ / GitHub - VJBots / Telegram - VJ_Botz
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the URL contains the 'Tech_VJ' parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const linkParam = urlParams.get('Tech_VJ');
+            
+            // If the Tech_VJ parameter exists, redirect to Telegram
+            if (linkParam) {
+                const telegramUrl = "https://telegram.me/DemoVJRobot?start=" + linkParam;
+                window.location.href = telegramUrl; // Redirect to the constructed Telegram URL
+            }
+        });
+      // Code Credit Goes To Yt - Tech VJ / GitHub - VJBots / Telegram - VJ_Botz
+    </script>
+</head>
+<body>
+    <h1>Redirecting To Your Link</h1>
+    <p>Subscribe Below YouTube Channel</p>
+    <a href="https://youtube.com/@Tech_VJ">Subscribe Here</a>
+</body>
+</html>
