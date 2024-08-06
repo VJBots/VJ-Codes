@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting To Your Link</title>
+    <style>
+        #countdown {
+            font-size: 48px;
+            font-weight: bold;
+            color: yellow;
+            display: inline;
+        }
+        .mixed-color {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 48px;
+            font-weight: bold;
+        }
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+    <script type="text/javascript">
+       
+
+// Code Credit Goes To Yt - Tech VJ / GitHub - VJBots / Telegram - VJ_Botz
+ document.addEventListener("DOMContentLoaded", function() {
+            // Check if the URL contains the 'Tech_VJ' parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const linkParam = urlParams.get('Tech_VJ');
+            const countdownElement = document.getElementById('countdown');
+
+            // If the Tech_VJ parameter exists, start the countdown and redirect
+            if (linkParam) {
+                let countdown = 10;
+                countdownElement.textContent = countdown;
+
+                const countdownInterval = setInterval(function() {
+                    countdown--;
+                    countdownElement.textContent = countdown;
+
+                    // When countdown reaches 0, redirect to link
+                    if (countdown <= 0) {
+                        clearInterval(countdownInterval);
+                        const telegramUrl = "https://telegram.me/DemoVJRobot?start=" + linkParam;
+                        window.location.href = telegramUrl;
+                    }
+                }, 1000);
+            }
+        });
+
+// Code Credit Goes To Yt - Tech VJ / GitHub - VJBots / Telegram - VJ_Botz
+    </script>
+</head>
+<body>
+    <h1>Redirecting To Your Link</h1>
+    <p><b>Subscribe Below YouTube Channel</b></p>
+    <a class="mixed-color" href="https://youtube.com/@Tech_VJ">Subscribe Here</a>
+    <p><b>Redirecting In <span class="mixed-color" id="countdown">2</span> Seconds...</b></p>
+</body>
+</html>
