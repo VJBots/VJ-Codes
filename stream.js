@@ -1,4 +1,5 @@
-const  Link = "{{file_url}}";
+const halflink = window.location.href;
+const Link = halflink.replace("/s/", "/dl/");
 
 function vlc_player() {
     const openLink = encodeURIComponent(Link); // Encode the link
