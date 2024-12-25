@@ -37,7 +37,7 @@ function hd_player() {
     window.location.href = openHDplayer;
 }
      
-function lazyDownload() {
+function Download() {
     const openLink = Link;
     window.location.href = openLink;
 }
