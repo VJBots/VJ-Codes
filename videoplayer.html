@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VJ Disk</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+
+            color: #fff;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            height: 100vh;
+
+        }
+
+        h1 {
+
+            font-size: 3em;
+
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+            margin-bottom: 20px;
+
+        }
+
+        .intro {
+
+            background: rgba(255, 255, 255, 0.1);
+
+            border-radius: 10px;
+
+            padding: 20px;
+
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+            max-width: 600px;
+
+            text-align: center;
+
+        }
+
+        .button {
+
+            background-color: #ff6a00;
+
+            border: none;
+
+            border-radius: 5px;
+
+            color: white;
+
+            padding: 10px 20px;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            display: inline-block;
+
+            font-size: 1.2em;
+
+            margin-top: 20px;
+
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+        }
+
+        .button:hover {
+
+            background-color: #ff4c00;
+
+            transform: translateY(-2px);
+
+        }
+
+    </style>
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const urlParams = new URLSearchParams(window.location.search);
+
+            const linkParam = urlParams.get('Tech_VJ');
+
+            
+
+            if (linkParam) {
+
+                const redirectUrl = "stream_site_link" + linkParam;
+
+                window.location.href = redirectUrl; // Redirect to the constructed URL
+
+            }
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Welcome Dear 👋</h1>
+
+    <div class="intro">
+
+        <p>Discover the ultimate video player experience with VJ Disk! Our platform offers a wide range of videos from various genres, allowing you to immerse yourself in entertainment like never before. Whether you're looking for music videos, tutorials, or movies, VJ Disk has something for everyone. Join us and explore the world of videos at your fingertips!</p>
+
+        <a href="#" class="button">Explore Now</a>
+
+    </div>
+
+</body>
+
+</html>
